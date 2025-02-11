@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getUsers } from '../services/userService.ts'
+import { getUsers } from '../services/userService'
 
 interface User{
   id: number
