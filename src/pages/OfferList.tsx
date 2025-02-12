@@ -1,6 +1,6 @@
 import { ChangeEvent, useEffect, useState } from 'react'
 import Offer from '../models/Offer'
-import { OfferService } from '../services/offer.services.ts'
+import { OfferService } from '../services/offer.services'
 import { Link, useSearchParams } from 'react-router-dom'
 import toast from 'react-hot-toast'
 
