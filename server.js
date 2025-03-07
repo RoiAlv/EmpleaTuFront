@@ -1,5 +1,5 @@
-import express from 'express';
-import path from 'path';
+import express from 'express'
+import path from 'path'
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 
@@ -17,6 +17,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server is running on port ${PORT}`);
 });
