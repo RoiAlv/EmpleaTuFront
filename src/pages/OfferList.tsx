@@ -41,13 +41,13 @@ function OfferList() {
   return (
     <div className="flex flex-col gap-4">
       <h2 className="text-4xl font-extrabold dark:text-white">
-        Lista de ofertas
+        Lista de cursos
       </h2>
       <Link
         to="/offers/new"
         className="text-white w-fit bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
       >
-        Añadir nueva oferta
+        Añadir nuevo curso
       </Link>
 
       <label
@@ -91,7 +91,7 @@ function OfferList() {
 
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
-      {offers?.length === 0 && <p>No hay ofertas disponibles</p>}
+      {offers?.length === 0 && <p>No hay cursos disponibles</p>}
       <div className="flex flex-wrap flex-row gap-4 items-center justify-center">
 
       {offers?.map((offer) => (

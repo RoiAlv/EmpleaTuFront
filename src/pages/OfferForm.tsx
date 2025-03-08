@@ -74,10 +74,10 @@ function OfferForm() {
       console.log(formData)
       if(id) await OfferService.update(Number(id), formData)
         else await OfferService.create(formData)
-      toast.success('Oferta guardada correctamente!')
+      toast.success('Curso guardado correctamente!')
       navigate('/offers')
     }catch(error){
-      toast.error('Error al guardar la oferta!')
+      toast.error('Error al guardar el curso!')
        if(Array.isArray(error)){
               const errorObj: Record<string, string> = error?.reduce((acc: Record<string, string>, err: unknown) => {
                 const errorDetail = err as ErrorMsgData;
@@ -111,7 +111,7 @@ function OfferForm() {
 
   return (
     <div className='text-white flex flex-col'>
-      <h2 className="text-4xl font-extrabold dark:text-white">{id?'Edición de oferta':'Inserción de nueva oferta'}</h2>
+      <h2 className="text-4xl font-extrabold dark:text-white">{id?'Edición de curso':'Inserción de nuevo curso'}</h2>
 
       <form className="max-w-sm mx-auto min-w-sm" onSubmit={handleSubmit}>
       
