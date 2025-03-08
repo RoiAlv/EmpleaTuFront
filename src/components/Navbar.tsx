@@ -26,7 +26,7 @@ function Navbar() {
 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
   <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="https://e7.pngegg.com/pngimages/323/56/png-clipart-learning-course-student-school-lecture-study-logo-angle-text.png" className="h-8" alt="Flowbite Logo"/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZMWlWociRctRWoBWsAexq-GuBkz7zep8wHQ&s" className="h-8" alt="Flowbite Logo"/>
       <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Cursos for all</span>
   </Link>
   <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
