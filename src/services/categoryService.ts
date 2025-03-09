@@ -1,7 +1,7 @@
 
 import Category from "../models/Category"
 import { fetchAPI } from "../utils/FetchAPI"
-const API_URL_BASE = import.meta.env.VITE_API_URL_BASE
+const API_URL_BASE = import.meta.env.TURSO_APP_URL_BASE
 
 export class CategoryService {
     static async getAll() {
