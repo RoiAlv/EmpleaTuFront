@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { AuthService } from "../services/authService";
 
-const API_URL_BASE = import.meta.env.TURSO_APP_URL_BASE
+const API_URL_BASE = import.meta.env.VITE_API_URL_BASE
 
 interface UserPayload{
     id: number
